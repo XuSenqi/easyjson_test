@@ -1,5 +1,17 @@
 # easyjson_test
 
+参考https://github.com/mailru/easyjson，安装easyjson工具
+```
+go get github.com/mailru/easyjson && go install github.com/mailru/easyjson/...@latest
+```
+
+生成user.go文件中定义的User struct的marshaler和unmarshaler的实现
+```
+cd user
+easyjson -all user.go
+```
+
+跑benchmark
 ```
 $ go test -bench=. -benchmem
 goos: darwin
