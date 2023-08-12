@@ -1,6 +1,7 @@
 # easyjson_test
 
 ```
+$ go test -bench=. -benchmem
 goos: darwin
 goarch: arm64
 pkg: easyjson_test
